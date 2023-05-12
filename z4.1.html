@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+			integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+			crossorigin="anonymous"
+		/>
+		<script src="https://kit.fontawesome.com/dc4f8560f3.js" crossorigin="anonymous"></script>
+
+		<title>Главная</title>
+		<style>
+			.btn-main-menu {
+				background-color: rgb(145, 145, 239);
+				color: white;
+			}
+			.fa-solid {
+				background: -webkit-gradient(
+					linear,
+					left top,
+					left bottom,
+					from(rgb(246, 34, 34)),
+					to(rgb(221, 192, 30))
+				);
+				color: transparent;
+				-webkit-background-clip: text;
+				background-clip: text;
+			}
+			.news {
+				background-image: url(/img/002.webp);
+				background-size: cover;
+				background-position: center;
+				height: 20rem;
+			}
+			.box {
+				max-width: 25rem;
+				height: auto;
+				border: 1px solid blue;
+				margin: auto;
+				padding: 0.5rem;
+				border-radius: 4px;
+				background-color: rgb(221, 192, 30, 0.6);
+				box-shadow: 0 0 10px 10px rgba(102, 90, 19, 0.6);
+			}
+			.card {
+				border: 2px salmon;
+			}
+			
+			element.style {
+			}
+
+		
+			.pt-5, .py-5 {
+				padding-top: 3rem!important;
+			}
+
+			.border {
+				border: 5px solid #2754e8!important;
+			}
+			.bg-success {
+   			 background-color: #25baf0!important;
+			}
+
+
+		</style>
+	</head>
+	<body>
+		<!-- Main menu start -->
+		<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #4f9b9b">
+			<a class="navbar-brand" href="#">Logo</a>
+			<button
+				class="navbar-toggler"
+				type="button"
+				data-toggle="collapse"
+				data-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent"
+				aria-expanded="false"
+				aria-label="Переключатель навигации"
+			>
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="#">Главная<span class="sr-only">(текущая)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">О компании</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a
+							class="nav-link dropdown-toggle"
+							href="#"
+							id="navbarDropdown"
+							role="button"
+							data-toggle="dropdown"
+							aria-haspopup="true"
+							aria-expanded="false"
+						>
+							Выпадающий список
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#">Действие</a>
+							<a class="dropdown-item" href="#">Другое действие</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">Что-то еще здесь</a>
+						</div>
+					</li>
+				</ul>
+				<form class="form-inline my-2 my-lg-0">
+					<input
+						class="form-control mr-sm-2"
+						type="search"
+						placeholder="Поиск"
+						aria-label="Поиск"
+					/>
+					<button class="btn btn-main-menu my-2 my-sm-0" type="submit">Поиск</button>
+				</form>
+			</div>
+		</nav>
+		<!-- Main menu end -->
+		<!-- Carousel start -->
+		<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+				<li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+				<li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+			</ol>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="/img/001.webp" class="d-block w-100" alt="абстракция" />
+					<div class="carousel-caption d-none d-md-block">
+						<h5>Абстрактая абстракция</h5>
+						<p>Некоторый репрезентативный заполнитель для первого слайда.</p>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img src="/img/002.webp" class="d-block w-100" alt="абстракция" />
+					<div class="carousel-caption d-none d-md-block">
+						<h5>Тоже абстракция</h5>
+						<p>Некоторый репрезентативный заполнитель для второго слайда.</p>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img src="/img/003.jpg" class="d-block w-100" alt="морской пейзаж" />
+					<div class="carousel-caption d-none d-md-block">
+						<h5>Море</h5>
+						<p>Некоторый репрезентативный заполнитель для третьего слайда.</p>
+					</div>
+				</div>
+			</div>
+			<a
+				class="carousel-control-prev"
+				href="#carouselExampleCaptions"
+				role="button"
+				data-slide="prev"
+			>
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">Предыдущий</span>
+			</a>
+			<a
+				class="carousel-control-next"
+				href="#carouselExampleCaptions"
+				role="button"
+				data-slide="next"
+			>
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only">Следующий</span>
+			</a>
+		</div>
+		<!-- Carousel end -->
+		<!-- Blog start -->
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-4 p-5">
+					<div class="card py-5 text-center bg-success border border-info .b1">
+
+					</div>
+				</div>
+				<div class="col-xl-4 p-5">
+					<div class="card py-5 text-center bg-success border border-info">
+
+					</div>
+				</div>
+				<div class="col-xl-4 p-5">
+					<div class="card py-5 text-center bg-success border border-info">
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Blog end -->
+		<!-- News start -->
+		<div class="container-fluid my-5 d-flex news">
+			<div class="box">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. A non dicta laborum! Laborum
+				aperiam culpa deserunt. Molestiae possimus ipsa quasi nemo corporis enim cumque, voluptas,
+				nisi quisquam non provident iste?
+			</div>
+		</div>
+		<!-- News end -->
+	
+		<script
+			src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>
