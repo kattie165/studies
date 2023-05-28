@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Взаимодействие с DOM</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <style>
+        #horse {
+            position: absolute;
+        }
+        #st {
+            position: absolute;
+            /* display: flex;
+            justify-content: center; */
+            width: 100%;
+            height: 100%;
+    
+        }
+
+        body {
+            background-color: #F6FCFF;
+        }
+
+        .fig1 {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            margin-left: 750px;
+            border-top-left-radius: 68px;
+            border-top-right-radius: 5px;
+            border-bottom-left-radius: 2px;
+            border-bottom-right-radius: 75px;
+            background: #490939;
+            background: linear-gradient(346deg, #490939 14%, #ff7700 83%);
+        }
+    </style>
+</head>
+
+<body>
+    <div><img src="./img/avia2.gif" alt="" id="horse" /></div>
+    
+    <div>
+        <img src="./img/st.gif" alt="" id="st">
+    </div>
+
+    <!-- <div class="fig1 animate__fadeInDownBig">
+        <td class="fig1 animate__fadeInDownBig"></td>
+    </div>
+    <h1 class="animate__animated animate__bounce">An animated element</h1> -->
+
+    <script>
+        let horseImg = document.getElementById("horse");
+        let step = 0;
+        let flag = true;
+
+        function animation() {
+            if (window.innerWidth - 200 > step && flag) {
+                horseImg.style.transform = "scaleX(1)";
+                step += 1;
+            } else {
+                horseImg.style.transform = "scaleX(-1)";
+                step -= 1;
+                flag = step == 0 ? true : false;
+            }
+
+            if (Math.round(window.innerWidth / 2) == step + 100) {
+                console.log("Я достигла середины экрана. Лошадь.");
+            }
+
+            horseImg.style.left = step + "px";
+        }
+
+        setInterval(animation, 20);
+    </script>
+</body>
+
+</html>
