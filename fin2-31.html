@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stail.css">
+
+    <style>
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="bl1">
+    <!-- block menu -->
+    <div class="burger-menu">
+        <a href="" class="burger-menu_button">
+            <spun class="burger-menu_lines"></spun>
+        </a>
+        <nav class="burger-menu_nav">
+            <a href="#section-0" class="burger-menu_link-0"></a>
+            <a href="#section-1" class="burger-menu_link">Project</a>
+            <a href="#section-2" class="burger-menu_link">About</a>
+            <a href="#section-3" class="burger-menu_link">Partners</a>
+            <a href="#section-4" class="burger-menu_link">Team</a>
+            <a href="#section-5" class="burger-menu_link">Contact</a>
+        </nav>
+        <div class="burger-menu_overlay"></div>
+    </div>
+    <section id="section-0"></section>
+
+
+
+
+
+
+    <script>
+        function burgerMenu(selector) {
+            let menu = $(selector);
+            let button = menu.find('.burger-menu_button', '.burger-menu_lines');
+            let links = menu.find('.burger-menu_link');
+            let overlay = menu.find('.burger-menu_overlay');
+
+            button.on('click', (e) => {
+                e.preventDefault();
+                toggleMenu();
+            });
+
+            links.on('click', () => toggleMenu());
+            overlay.on('click', () => toggleMenu());
+
+            function toggleMenu() {
+                menu.toggleClass('burger-menu_active');
+
+                if (menu.hasClass('burger-menu_active')) {
+                    $('body').css('overlow', 'hidden');
+                } else {
+                    $('body').css('overlow', 'visible');
+                }
+            }
+        }
+
+        burgerMenu('.burger-menu');
+    </script>
+
+        <!-- block menu -->
+
+
+        
+    <!-- block 1 -->
+
+    <div class="cont-b1">
+
+        <div class="con1-b1">
+            <div class="b1-b1">
+                <h4 class="h4">We back big Web3</h4>
+                <p class="text2"> ambitions and great decentralized projects to help extraordinary founders
+                deliver ideas into reality</p>
+            </div>    
+            <div class="t">
+                <p></p>
+                <p></p>
+                <p class="text2">CONNECTIVITY TO OPPORTUNITIES</p>
+                <p class="text1">We connect the Western and Eastern world via the shared interest in the blockchain
+                    and Web 3.0
+                    industries.</p>
+
+                <p class="text1">From NYC and London to Beijing and Seoul we're unlocking potential of brilliant
+                    projects.
+                    Cryptomeria Capital is a team of blockchain experts who believe the new industrial revolution
+                    starts
+                    here.</p>
+            </div>
+        </div>
+
+
+        <!-- <div class="cw3-b1">
+            <img src="./img1/pl1.png" style="max-width: 100%; 
+            object-fit: fill; " alt="">
+        </div> -->
+    </div>
+
+    </div>
+
+    <!-- block 2 -->
+    <section id="section-1"></section>
+
+    <div class="cont">
+        <div class="cw3">
+            <!-- <img src="./img1/w3.png"  
+            style="max-width: 100%; 
+            object-fit: fill; " alt=""> -->
+
+            <picture>
+                <source media="(max-width: 700px)" srcset="/img1/w3m.png">
+                <source media="(max-width: 1500px)" srcset="./img1/w3p.png">
+                <source media="(min-width: 1501px)" srcset="./img1/w3.png">
+                <img src="./img1/w3.png" alt="">
+            </picture>
+        </div>
+
+
+
+        <div class="con1">
+            <p></p>
+            <h4 class="h4">What is Web3</h4>
+            <div class="text1">
+                <p>
+                    Web3 is an idea for a new iteration of the World Wide Web based on blockchain technology,
+                    which incorporates concepts such as decentralization and token-based economics. Some technologists
+                    and
+                    journalists have contrasted it with Web 2.0, wherein they say data and content are centralized in a
+                    small
+                    group of companies sometimes referred to as "Big Tech". The term "Web3" was coined in 2014 by
+                    Ethereum
+                    co-founder Gavin Wood, and the idea gained interest in 2021 from cryptocurrency enthusiasts, large
+                    technology companies, and venture capital firms.</p>
+                <p>
+                    Some experts argue that Web3 will provide increased data security, scalability, and privacy for
+                    users
+                    and
+                    combat the influence of large technology companies. Others have raised concerns about a
+                    decentralized
+                    web,
+                    citing the potential for low moderation and the proliferation of harmful content,the centralization
+                    of
+                    wealth to a small group of investors and individuals, or a loss of privacy due to more expansive
+                    data
+                    collection. Others, such as Elon Musk and Jack Dorsey, have argued that Web3 only serves as a
+                    buzzword.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- block 3 -->
+    <section id="section-2"></section>
+
+    <div class="bl3">
+        <div class="c-bl3">
+            <h4>What we do</h4>
+            <p></p>
+            <div class="text1">We invest in early stage blockchain and Web 3.0 companies as a strategic investor. Our
+                portfolio companies get access to our network, marketing support, technical expertise and much more.
+            </div>
+        </div>
+    </div>
+
+
+    <!-- block 4 -->
+    <section id="section-3"></section>
+
+    <div class="cont-bl4">
+        <p></p>
+        <p></p>
+        <h4>In Partnership With</h4>
+        <p></p>
+        <div class="bl4">
+
+            <img class="fl" src="./img1/fl1.png" alt="">
+            <img class="fl" src="./img1/fl2.png" alt="">
+            <img class="fl" src="./img1/fl3.png" alt="">
+            <img class="fl" src="./img1/fl4.png" alt="">
+            <img class="fl" src="./img1/fl5.png" alt="">
+        </div>
+    </div>
+    </div>
+
+
+    <!-- block 5 -->
+    <section id="section-4"></section>
+
+    <h4 class="cont-bl5">Team</h4>
+    <div class="cont">
+        <div class="c-bl5">
+
+            <img class="fp" src="./img1/fp1.png" alt="">
+            <div class="tp1">Alex Gre</div>
+            <div class="text1">Managing Partner</div>
+            <p style="padding-bottom: 20px"></p>
+        </div>
+        <div class="c-bl5">
+            <img class="fp" src="./img1/fp2.png" alt="">
+            <div class="tp1">Anna Brown</div>
+            <div class="text1">Founding Partner</div>
+            <p style="padding-bottom: 20px"></p>
+        </div>
+    </div>
+
+    <!-- block 6 -->
+    <section id="section-5"></section>
+    
+    <div class="bl6">
+
+        <div class="c-bl6">
+            <form action="mail_script.php" method="post">
+                <h4>Contact Us</h4>
+                <p class="text2">Name: <input class="in" type="text" name="name" /></p>
+
+                <p class="text2">Email: <input class="in" type="tel" name="telephone" /></p>
+
+                <p class="text2">Phone: <input class="in" type="tel" name="telephone" /></p>
+                <p class="text2">Message: <input class="in" type="tel" name="telephone" /></p>
+                <p><input class="send" type="submit" /></p>
+
+                <!-- <p>Send<input type="submit" /></p> -->
+
+            </form>
+        </div>
+    </div>
+
+    <div class="f">
+        <div class="text2">© CryptoSpace. Singapore. All Rights Reserved.</div>
+    </div>
+
+
+
+</body>
+
+</html>
